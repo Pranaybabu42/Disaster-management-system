@@ -68,3 +68,27 @@ jobs:
 
       - name: Build React application
         run: npm run build
+
+  security-scan:
+    name: Gitleaks Security Scan
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Run Gitleaks
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release download v8.24.3 \
+            --repo gitleaks/gitleaks \
+            --pattern 'gitleaks_8.24.3_linux_x64.tar.gz' \
+            --dir /tmp
+
+          tar -xzf /tmp/gitleaks_8.24.3_linux_x64.tar.gz \
+            -C /tmp gitleaks
+
+          /tmp/gitleaks git . --redact --verbose
