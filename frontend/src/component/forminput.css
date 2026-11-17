@@ -1,0 +1,16 @@
+.form-field { margin-bottom: 19px; }
+.form-field .form-label { display: block; margin-bottom: 8px; color: #29364b; font-size: 13px; font-weight: 700; }
+.required-mark { margin-left: 3px; color: #d95c64; }
+.field-control { position: relative; }
+.field-control .form-control { min-height: 49px; padding: 12px 15px; border: 1px solid #dce2eb; border-radius: 9px; color: #1d2a3d; background-color: #fff; font-size: 14px; box-shadow: none; }
+.field-control .form-control::placeholder { color: #9ca7b7; }
+.field-control .form-control:focus { border-color: #3b7cce; box-shadow: 0 0 0 3px rgb(59 124 206 / 12%); }
+.field-control--error .form-control { border-color: #cf525b; }
+.field-icon { position: absolute; z-index: 2; top: 50%; left: 14px; color: #8995a7; font-size: 15px; transform: translateY(-50%); }
+.field-icon + .form-control { padding-left: 42px; }
+.password-toggle { position: absolute; top: 50%; right: 12px; padding: 4px 3px; border: 0; color: #52657e; background: transparent; font-size: 12px; font-weight: 700; transform: translateY(-50%); }
+.password-toggle:focus-visible { outline: 2px solid #3b7cce; outline-offset: 2px; border-radius: 3px; }
+.field-control:has(.password-toggle) .form-control { padding-right: 62px; }
+.field-feedback, .field-hint { margin-top: 6px; font-size: 12px; }
+.field-feedback { color: #bf3d48; }
+.field-hint { color: #77859a; }

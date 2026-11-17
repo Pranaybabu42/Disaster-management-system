@@ -1,0 +1,13 @@
+fastapi
+pandas
+numpy
+pydantic
+uvicorn[standard]
+sqlalchemy
+pyjwt
+pwdlib[argon2]
+pydantic-settings
+httpx
+pytest
+pymongo
+python-dotenv

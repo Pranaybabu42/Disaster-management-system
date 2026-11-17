@@ -1,0 +1,2 @@
+.app-shell { min-height: 100vh; background: #f4f7fb; }
+.session-loading { display: flex; min-height: 100vh; align-items: center; justify-content: center; gap: 10px; color: #64758b; font-size: 13px; }

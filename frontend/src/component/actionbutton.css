@@ -1,0 +1,8 @@
+.action-button { display: inline-flex; min-height: 49px; align-items: center; justify-content: center; gap: 9px; border: 1px solid transparent; border-radius: 9px; padding: 12px 18px; font-size: 14px; font-weight: 700; transition: background-color .18s ease, box-shadow .18s ease, transform .18s ease; }
+.action-button:focus-visible { outline: 3px solid rgb(53 120 204 / 28%); outline-offset: 2px; }
+.action-button:disabled { cursor: not-allowed; opacity: .7; }
+.action-button--primary { color: #fff; background: #286cb8; box-shadow: 0 5px 12px rgb(40 108 184 / 18%); }
+.action-button--primary:hover:not(:disabled) { background: #205c9e; box-shadow: 0 7px 16px rgb(40 108 184 / 24%); transform: translateY(-1px); }
+.action-button--secondary { color: #34445b; border-color: #dce2eb; background: #fff; }
+.action-button--secondary:hover:not(:disabled) { background: #f4f7fb; }
+.action-button--full { width: 100%; }
